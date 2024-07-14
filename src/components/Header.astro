@@ -1,0 +1,35 @@
+---
+import Navigation from "./Navigation.astro";
+import Hamburger from "./Hamburger.astro";
+---
+
+<style>
+  /* Estilos para dispositivos móviles */
+  @media (max-width: 768px) {
+    .desktop-nav {
+      display: none;
+    }
+    .mobile-nav {
+      display: block;
+    }
+  }
+
+  /* Estilos para dispositivos más grandes */
+  @media (min-width: 769px) {
+    .desktop-nav {
+      display: block;
+    }
+    .mobile-nav {
+      display: none;
+    }
+  }
+</style>
+
+<header>
+  <div class="mobile-nav">
+    <Hamburger />
+  </div>
+  <div class="desktop-nav">
+    <Navigation />
+  </div>
+</header>

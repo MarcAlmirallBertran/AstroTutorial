@@ -1,0 +1,27 @@
+---
+const { link } = Astro.props;
+---
+
+<style>
+  a {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: rgb(243 244 246);
+    text-decoration: none;
+    color: black;
+    border-radius: 9999px;
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  a.social-link:hover,
+  a.social-link:focus {
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto y SVG en blanco */
+  }
+</style>
+
+<a target="_blank" href={link} class="social-link">
+  <slot />
+</a>

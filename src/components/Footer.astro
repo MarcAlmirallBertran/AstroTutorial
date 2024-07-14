@@ -1,0 +1,24 @@
+---
+import SocialLink from "./SocialLink.astro";
+import GitHubIcon from "./icons/GitHub.astro";
+import LinkedInIcon from "./icons/LinkedIn.astro";
+---
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+
+<footer>
+  <SocialLink link="https://www.github.com/MarcAlmirallBertran">
+    <GitHubIcon />
+    GitHub
+  </SocialLink>
+  <SocialLink link="https://www.linkedin.com/in/marc-almirall">
+    <LinkedInIcon />
+    LinkedIn
+  </SocialLink>
+</footer>
